@@ -1,0 +1,21 @@
+{
+    "name": "Autodelete",
+    "short": "Autodelete old backup",
+    "description": "Autodelete cog",
+    "end_user_data_statement": "This cog does not persistently store any data or metadata about users.",
+    "install_msg": ":wuv:",
+    "author": [
+        "Fran-T4NK"
+    ],
+    "required_cogs": {},
+    "requirements": [],
+    "tags": [
+        "tag1",
+        "tag2",
+        "tag3"
+    ],
+    "min_bot_version": "3.3.10",
+    "hidden": false,
+    "disabled": false,
+    "type": "COG"
+}
