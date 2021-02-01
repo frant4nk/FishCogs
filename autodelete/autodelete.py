@@ -12,8 +12,8 @@ class AutoDelete(commands.Cog):
 
     def __init__(self, bot: Red) -> None:
         self.bot = bot
-        self.user = "delete."
-        self.password = "backupdeletion"
+        self.user = ""
+        self.password = ""
 
         self.name_list = []
         self.uuid_list = []
@@ -27,11 +27,11 @@ class AutoDelete(commands.Cog):
         
         self.headers_app = {"Accept": "application/json",
                             "Content-Type": "application/json",
-                            "Authorization": "Bearer T2MnEuxTQPHVJZNnmno1GQbQp4S6oPnzUCKYXKq0fqGiH1LA"}
+                            "Authorization": "Bearer "}
         
         self.headers_client = {"Accept": "application/json",
                                "Content-Type": "application/json",
-                               "Authorization": "Bearer bk9IGHp4IG0zxNBp6vaM5DoyvHLkebTuwEQeCDhcbEBO3IQ6"}
+                               "Authorization": "Bearer "}
         self.fetchIds()
 
     def fetchIds(self):
