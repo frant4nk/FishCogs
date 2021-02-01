@@ -21,8 +21,8 @@ class Backup(commands.Cog):
             if message.author.bot:
                 return
             try:
-                cnx = mysql.connector.connect(user='whitelist', password='HB*H2EmNv48wQ', host='pan.helioss.co',
-                                              database="whitelist")
+                cnx = mysql.connector.connect(user='', password='', host='pan.helioss.co',
+                                              database="")
                 sql = """INSERT INTO whitelist (user, wihtelisted) VALUES (%s, %s)"""
 
                 whitelisted = 1
