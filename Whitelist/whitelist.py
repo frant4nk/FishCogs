@@ -21,9 +21,9 @@ class Whitelist(commands.Cog):
             cat_thumb = discord.utils.get(ctx.guild.emojis, name="cat_thumb")
             cat_sad = discord.utils.get(ctx.guild.emojis, name="cat_sad")
             try:
-                cnx = mysql.connector.connect(user='whitelist', password='HB*H2EmNv48wQ',
-                                              host='pan.helioss.co',
-                                              database="whitelist")
+                cnx = mysql.connector.connect(user='', password='',
+                                              host='',
+                                              database="")
                 sql = """SELECT * FROM whitelist WHERE USER = %s"""
 
                 cursor = cnx.cursor()
@@ -43,9 +43,9 @@ class Whitelist(commands.Cog):
         if args == "add" and username is not None:
             cat_thumb = discord.utils.get(ctx.guild.emojis, name="cat_thumb")
             try:
-                cnx = mysql.connector.connect(user='whitelist', password='HB*H2EmNv48wQ',
-                                              host='pan.helioss.co',
-                                              database="whitelist")
+                cnx = mysql.connector.connect(user='', password='',
+                                              host='',
+                                              database="")
                 sql = """INSERT INTO whitelist (user, wihtelisted) VALUES (%s, %s)"""
 
                 whitelisted = 1
@@ -63,9 +63,9 @@ class Whitelist(commands.Cog):
         if args == "del" and username is not None:
             cat_thumb = discord.utils.get(ctx.guild.emojis, name="cat_thumb")
             try:
-                cnx = mysql.connector.connect(user='whitelist', password='HB*H2EmNv48wQ',
-                                              host='pan.helioss.co',
-                                              database="whitelist")
+                cnx = mysql.connector.connect(user='', password='',
+                                              host='',
+                                              database="")
                 sql = """DELETE FROM whitelist WHERE user = %s"""
 
                 cursor = cnx.cursor()
@@ -122,9 +122,9 @@ class Whitelist(commands.Cog):
                                 await channel.send("```Could not read the username from the application\n"
                                                    "Please add it manually```")
                             try:
-                                cnx = mysql.connector.connect(user='whitelist', password='HB*H2EmNv48wQ',
-                                                              host='pan.helioss.co',
-                                                              database="whitelist")
+                                cnx = mysql.connector.connect(user='', password='',
+                                                              host='',
+                                                              database="")
                                 sql = """INSERT INTO whitelist (user, wihtelisted) VALUES (%s, %s)"""
 
                                 whitelisted = 1
