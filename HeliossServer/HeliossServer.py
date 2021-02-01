@@ -51,7 +51,7 @@ class HeliossServer(commands.Cog):
     def getServerInfo(uuid) -> object:
         headers = {"Accept": "application/json",
                    "Content-Type": "application/json",
-                   "Authorization": "Bearer XTF8ip2DPst0R12JvIlW2WKwxtUw9ZvR6s38JM9NUb8jLKkt"}
+                   "Authorization": "Bearer "}
         r = requests.get("https://pan.helioss.co/api/client/servers/" + uuid + "/resources", headers=headers)
         disk_bytes = int(r.json()["attributes"]["resources"]["disk_bytes"])
         memory_bytes = int(r.json()["attributes"]["resources"]["memory_bytes"])
